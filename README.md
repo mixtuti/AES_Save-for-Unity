@@ -18,8 +18,13 @@ int型、Float型限定で2つの値を比較する機能も付いています�
 なし
 
 ## 導入方法
-
-
+### 1. Unity Package Managerを使う方法
+Window > Package Managerを開き、以下のURLを入力する。
+```
 https://github.com/mixtuti/AES_Save-for-Unity.git?path=AESSave
+```
+### 2. Import Packageを使う方法
+リリースから最新のUnity Packageをダウンロードする。
+
 ## 関数
 ## リファレンス
