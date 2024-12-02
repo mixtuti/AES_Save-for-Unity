@@ -1,0 +1,2 @@
+# AES_Save
+PlayerPrefsをAES暗号を用いて保存するライブラリ
