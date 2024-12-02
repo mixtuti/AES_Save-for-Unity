@@ -3,4 +3,7 @@
 PlayerPrefsをAES暗号を用いて保存するライブラリ<br>
 int float string以外の型も保存可能
 
+## 導入方法
+
+
 https://github.com/mixtuti/AES_Save-for-Unity.git?path=AESSave
