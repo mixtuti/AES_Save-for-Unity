@@ -19,7 +19,8 @@ int型、Float型限定で2つの値を比較する機能も付いています�
 
 ## 導入方法
 ### 1. Unity Package Managerを使う方法
-Window > Package Managerを開き、以下のURLを入力する。
+Window > Package Managerを開き、Add Package from git URLを選択する。
+その後、以下のURLを入力する。
 ```
 https://github.com/mixtuti/AES_Save-for-Unity.git?path=AESSave
 ```
