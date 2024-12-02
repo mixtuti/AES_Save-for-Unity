@@ -1,0 +1,8 @@
+{
+  "name": "jp.mixtuti.aes_save",
+  "author": "mixtuti",
+  "version": "1.0.0",
+  "displayName": "AESSave",
+  "description": "System for saving using AES",
+  "unity": "2022.3"
+}

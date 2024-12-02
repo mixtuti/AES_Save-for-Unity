@@ -1,0 +1,16 @@
+{
+    "name": "AESSaveEditor",
+    "rootNamespace": "",
+    "references": [
+        "GUID:5cb876c40e56d4b43b687ccc9796e5e5"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
