@@ -95,6 +95,7 @@ int型の値を保存するための関数。<br>
 #### 2. GetEncryptedInt(string key, int defaultValue = 0)
 保存した値をロードするための関数。<br>
 第１引数はキーの名前(string型)<br>
+第２引数はデフォルトの値(省略可能)<br>
 戻り値は、defaultValue(int型)<br>
 <br>
 3~16は基本的に同じなので省略。<br>
