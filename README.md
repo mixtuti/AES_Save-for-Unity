@@ -34,6 +34,8 @@ https://github.com/mixtuti/AES_Save-for-Unity.git?path=AESSave
 ```
 #### 2. Import Packageを使う方法
 リリースから最新のUnity Packageをダウンロードし、インポートします。
+> [!TIP]
+> 更新が遅くなることが多いので1の方法を使うことをお勧めします。
 
 ### 2. 利用方法
 適当なゲームオブジェクトに、`AESKeyManager.cs`、`AESDataExploration.cs`をアタッチする。
