@@ -141,3 +141,66 @@ public class Exsample : MonoBehaviour
     }
 }
 ```
+```cs
+using UnityEngine;
+using AES; // AESCoreを使用するには必須の名前空間
+
+public class Exsample : MonoBehaviour
+{
+    void Start()
+    {
+        // Bool型のデータ保存と取得
+        AESCore.SetEncryptedBool("isGameOver", true);  // GameOverフラグを保存
+        bool isGameOver = AESCore.GetEncryptedBool("isGameOver");
+        Debug.Log($"Is Game Over: {isGameOver}");
+
+        // List<int>の保存 int型以外でも可能
+        List<int> scoreList = new List<int> { 100, 200, 300 };
+        AESCore.SetEncryptedList("scoreList", scoreList);
+        List<int> loadedScores = AESCore.GetEncryptedList<int>("scoreList");
+        Debug.Log($"Loaded Score List: {string.Join(", ", loadedScores)}");
+
+        // Vector2の保存
+        Vector2 myVector2 = new Vector2(1.5f, 3.0f);
+        AESCore.SetEncryptedVector2("myVector2", myVector2);
+        Vector2 loadedVector2 = AESCore.GetEncryptedVector2("myVector2");
+        Debug.Log($"Loaded Vector2: {loadedVector2}");
+
+        // Vector3の保存
+        Vector3 myVector3 = new Vector3(1.5f, 3.0f, 5.0f);
+        AESCore.SetEncryptedVector3("myVector3", myVector3);
+        Vector3 loadedVector3 = AESCore.GetEncryptedVector3("myVector3");
+        Debug.Log($"Loaded Vector3: {loadedVector3}");
+    }
+}
+```
+```cs
+using UnityEngine;
+using AES; // AESCoreを使用するには必須の名前空間
+
+public class DictionaryExsample : MonoBehaviour
+{
+    void Start()
+    {
+        // 辞書型データを作成
+        Dictionary<string, string> playerData = new Dictionary<string, string>()
+        {
+            { "name", "Player1" },
+            { "score", "100" },
+            { "level", "5" }
+        };
+
+        // 辞書型データを保存（暗号化されている場合は暗号化されて保存される）
+        AESCore.SetEncryptedDictionary("playerData", playerData);
+
+        // 保存したデータを読み込む（暗号化されていれば復号化されて読み込まれる）
+        Dictionary<string, string> loadedData = AESCore.GetEncryptedDictionary("playerData");
+
+        // 読み込んだデータを表示
+        foreach (KeyValuePair<string, string> entry in loadedData)
+        {
+            Debug.Log($"{entry.Key}: {entry.Value}");
+        }
+    }
+}
+```
